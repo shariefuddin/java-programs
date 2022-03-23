@@ -1,30 +1,19 @@
-class Adder
+class sumofnatural
 {
-    static void sum(int a, int b)
+    static void sum(int n)
     {
-        System.out.println("sum is :"+(a+b));
-    }
-    static void sum(int a, int b,int c)
-    {
-        System.out.println("sum is :"+(a+b+c));
-    }
-    static void sum(double a, double b)
-    {
-        System.out.println("sum is :"+(a+b));
-    }
-    static void sum(float a, float b)
-    {
-        System.out.println("sum is :"+(a+b));
+        int  sum=0,i;
+        for(i=0;i<n;i++)
+        {
+            sum=sum+i;
+        }
+        System.out.println(" sum of n natural numbers are are :"+sum);
     }
 }
 class Sum
 {
-    public static void main (String args[])
+    public static void main(String args[])
     {
-        Adder.sum(10,30);
-        Adder.sum(10,30,50);
-        Adder.sum(10.69,30.36);
-        Adder.sum(10.36,30.98);
-        
+        sumofnatural.sum(5);
     }
 }
