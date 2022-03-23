@@ -1,15 +1,30 @@
-import java.util.Scanner; 
-class Sum{
-public static void main(String args[]){
-Scanner sc=new Scanner(System.in);
-System.out.println("enter number");
-int n=sc.nextInt();
-int i=1,sum=0;
-while(i<=n)
+class Adder
 {
-sum=sum+i;
-i++;
+    static void sum(int a, int b)
+    {
+        System.out.println("sum is :"+(a+b));
+    }
+    static void sum(int a, int b,int c)
+    {
+        System.out.println("sum is :"+(a+b+c));
+    }
+    static void sum(double a, double b)
+    {
+        System.out.println("sum is :"+(a+b));
+    }
+    static void sum(float a, float b)
+    {
+        System.out.println("sum is :"+(a+b));
+    }
 }
-System.out.println("sum of first n natural numbers="+sum);
-}
+class Sum
+{
+    public static void main (String args[])
+    {
+        Adder.sum(10,30);
+        Adder.sum(10,30,50);
+        Adder.sum(10.69,30.36);
+        Adder.sum(10.36,30.98);
+        
+    }
 }
